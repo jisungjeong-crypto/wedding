@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="2027년 1월 31일 일요일 오후 3시 10분, 보타닉파크웨딩 오키드홀">
+<meta property="og:type" content="website">
+<meta property="og:title" content="정지성 ♥ 이화정 결혼합니다">
+<meta property="og:description" content="2027년 1월 31일 일요일 오후 3시 10분 · 보타닉파크웨딩 오키드홀">
+<title>지성 ♥ 화정 결혼합니다</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Gowun+Dodum&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap">
+<style>
+/* Layout: one narrow paper column (max 440px) of stacked sections, like a folded card read top to bottom.
+   Single deliberate light look: winter greenhouse — pale leaf paper, forest ink, a muted orchid accent for the Orchid Hall. */
+:root {
+  --paper: #f5f7f2;
+  --paper-2: #ebf0e6;
+  --ink: #1e352a;
+  --ink-soft: #55695d;
+  --line: #d3dccf;
+  --orchid: #9a5c86;
+  --orchid-soft: #f1e4ec;
+  --white: #ffffff;
+  --display: "Nanum Myeongjo", "Batang", serif;
+  --body: "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --latin: "Cormorant Garamond", "Times New Roman", serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+html { background: var(--paper-2); }
+body {
+  background: var(--paper-2);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+.card {
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--paper);
+  min-height: 100%;
+}
+section {
+  padding-block: 64px;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  text-align: center;
+}
+section + section { border-top: 1px solid var(--line); }
+.eyebrow {
+  font-family: var(--latin);
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: var(--orchid);
+  margin: 0 0 6px;
+}
+h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 28px;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+/* Hero */
+.hero { padding-block: 72px 56px; border-top: 0; }
+.hero .date {
+  font-family: var(--latin);
+  font-size: 22px;
+  letter-spacing: 0.32em;
+  margin: 0;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.hero .dow { font-family: var(--latin); font-size: 13px; letter-spacing: 0.4em; color: var(--ink-soft); margin: 4px 0 0; }
+.sprig { display: block; margin: 36px auto; width: 96px; height: auto; }
+.names {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+.names .amp { font-family: var(--latin); font-style: italic; font-weight: 500; font-size: 22px; color: var(--orchid); }
+.hero .where { margin: 28px 0 0; color: var(--ink-soft); font-size: 14px; line-height: 1.7; }
+
+/* Greeting */
+.greeting p { margin: 0; font-family: var(--display); font-size: 15px; line-height: 2.1; }
+.greeting p + p { margin-top: 20px; }
+.parents {
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 8px;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 15px;
+}
+.parents div { display: contents; }
+.parents span { white-space: nowrap; }
+.parents .p { text-align: right; }
+.parents .rel { color: var(--ink-soft); font-size: 13px; text-align: left; }
+.parents .child { font-family: var(--display); font-weight: 700; font-size: 17px; text-align: left; }
+
+/* Calendar */
+.when-line { font-family: var(--display); font-size: 16px; margin: 0 0 28px; }
+.cal { max-width: 320px; margin: 0 auto; }
+.cal-month { font-family: var(--latin); font-size: 18px; letter-spacing: 0.2em; margin: 0 0 14px; }
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 6px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding-block: 14px;
+}
+.cal-grid span { height: 36px; display: grid; place-items: center; }
+.cal-grid .hd { font-size: 12px; color: var(--ink-soft); height: 28px; }
+.cal-grid .sun { color: var(--orchid); }
+.cal-grid .day-of {
+  background: var(--orchid);
+  color: var(--white);
+  border-radius: 50%;
+  width: 36px;
+  margin: 0 auto;
+  font-weight: 700;
+}
+.dday { margin: 28px 0 0; font-size: 14px; color: var(--ink-soft); }
+.dday b { color: var(--orchid); font-weight: 400; font-family: var(--display); font-size: 17px; }
+.dday-units { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+.dday-units div { width: 60px; padding-block: 10px; background: var(--white); border: 1px solid var(--line); border-radius: 6px; }
+.dday-units strong { display: block; font-family: var(--latin); font-size: 24px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.dday-units small { font-size: 11px; color: var(--ink-soft); letter-spacing: 0.1em; }
+
+/* Location */
+.venue { font-family: var(--display); font-weight: 700; font-size: 18px; margin: 0; }
+.addr { margin: 6px 0 0; font-size: 14px; color: var(--ink-soft); }
+.copy-btn {
+  margin-top: 12px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 14px;
+  cursor: pointer;
+}
+.copy-btn:hover { border-color: var(--ink-soft); }
+.copy-btn:focus-visible, .map-btn:focus-visible { outline: 2px solid var(--orchid); outline-offset: 2px; }
+.map-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 28px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.map-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.map-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+}
+.map-btn:hover { border-color: var(--ink-soft); }
+.map-btn img { width: 22px; height: 22px; border-radius: 5px; object-fit: cover; }
+.guide { margin-top: 36px; text-align: left; display: grid; gap: 22px; }
+.guide h3 {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.guide p { margin: 0; font-size: 14px; color: var(--ink-soft); line-height: 1.75; }
+.guide .line9 {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--white);
+  background: #a38b4f;
+  border-radius: 999px;
+  padding: 0 8px;
+  margin-right: 4px;
+  vertical-align: 1px;
+}
+.guide .lineA {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--white);
+  background: #3d8fbf;
+  border-radius: 999px;
+  padding: 0 8px;
+  margin-right: 4px;
+  vertical-align: 1px;
+}
+
+footer {
+  padding-block: 48px 64px;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+footer .sign { font-family: var(--latin); font-style: italic; font-size: 17px; color: var(--orchid); margin: 0 0 6px; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero > * { animation: rise 0.9s ease both; }
+  .hero > *:nth-child(2) { animation-delay: 0.08s; }
+  .hero > *:nth-child(3) { animation-delay: 0.16s; }
+  .hero > *:nth-child(4) { animation-delay: 0.24s; }
+  .hero > *:nth-child(5) { animation-delay: 0.32s; }
+  @keyframes rise { from { transform: translateY(8px); } to { transform: none; } }
+}
+</style>
+
+
+</head>
+<body>
+<main class="card">
+  <section class="hero" aria-label="결혼식 안내">
+    <p class="date">2027.01.31</p>
+    <p class="dow">SUNDAY · 3:10 PM</p>
+    <svg class="sprig" viewBox="0 0 120 60" aria-hidden="true">
+      <path d="M8 46 C 40 40, 80 40, 112 26" fill="none" stroke="#1e352a" stroke-width="1.2"/>
+      <path d="M34 42 C 30 30, 38 22, 46 20 C 46 30, 42 38, 34 42 Z" fill="#c9d6c3" stroke="#1e352a" stroke-width="0.8"/>
+      <path d="M56 40 C 58 50, 68 54, 76 52 C 72 44, 64 40, 56 40 Z" fill="#c9d6c3" stroke="#1e352a" stroke-width="0.8"/>
+      <path d="M70 37 C 68 25, 76 17, 86 16 C 86 26, 80 34, 70 37 Z" fill="#c9d6c3" stroke="#1e352a" stroke-width="0.8"/>
+      <circle cx="104" cy="26" r="6" fill="#f1e4ec" stroke="#9a5c86" stroke-width="1"/>
+      <circle cx="104" cy="26" r="2" fill="#9a5c86"/>
+    </svg>
+    <h1 class="names"><span>정지성</span><span class="amp">&amp;</span><span>이화정</span></h1>
+    <p class="where">2027년 1월 31일 일요일 오후 3시 10분<br>보타닉파크웨딩 L층 오키드홀</p>
+  </section>
+
+  <section class="greeting">
+    <p class="eyebrow">Invitation</p>
+    <h2>소중한 분들을 초대합니다</h2>
+    <p>서로 다른 길을 걸어온 두 사람이<br>이제 같은 곳을 바라보며<br>한 걸음씩 함께 걸어가려 합니다.</p>
+    <p>추운 겨울날이지만<br>따뜻한 마음으로 오셔서<br>저희의 첫걸음을 축복해 주세요.</p>
+    <div class="parents">
+      <div><span class="p">정진 · 박춘희</span><span class="rel">의 아들</span><span class="child">지성</span></div>
+      <div><span class="p">이승수 · 이환숙</span><span class="rel">의 딸</span><span class="child">화정</span></div>
+    </div>
+  </section>
+
+  <section class="when">
+    <p class="eyebrow">Wedding Day</p>
+    <h2>예식 일시</h2>
+    <p class="when-line">2027년 1월 31일 일요일 오후 3시 10분</p>
+    <div class="cal">
+      <p class="cal-month">JANUARY</p>
+      <div class="cal-grid" id="cal" aria-label="2027년 1월 달력"></div>
+    </div>
+    <p class="dday" id="dday-line">지성 <span aria-hidden="true">♥</span> 화정의 결혼식이 <b id="dday-num">D-97</b> 남았습니다</p>
+    <div class="dday-units" aria-hidden="true">
+      <div><strong id="u-d">97</strong><small>DAYS</small></div>
+      <div><strong id="u-h">00</strong><small>HOUR</small></div>
+      <div><strong id="u-m">00</strong><small>MIN</small></div>
+      <div><strong id="u-s">00</strong><small>SEC</small></div>
+    </div>
+  </section>
+
+  <section class="location">
+    <p class="eyebrow">Location</p>
+    <h2>오시는 길</h2>
+    <p class="venue">보타닉파크웨딩 오키드홀</p>
+    <p class="addr" id="addr">서울 강서구 마곡중앙5로 6 보타닉푸르지오시티 L층(로비층)</p>
+    <button class="copy-btn" id="copy-addr" type="button">주소 복사</button>
+    <img class="map-img" src="img/map.png" alt="약도: 보타닉파크웨딩은 9호선·공항철도 마곡나루역 1번과 2번 출구 사이 건물이며, 맞은편에 서울식물원이 있습니다." width="700" height="698">
+    <div class="map-btns">
+      <a class="map-btn" href="https://naver.me/502MVbqj" target="_blank" rel="noopener"><img src="img/naver.png" alt="">네이버 지도</a>
+      <a class="map-btn" href="https://kko.to/g-ep4wJCSK" target="_blank" rel="noopener"><img src="img/kakao.png" alt="">카카오맵</a>
+    </div>
+    <div class="guide">
+      <div>
+        <h3>지하철</h3>
+        <p><span class="line9">9호선</span><span class="lineA">공항철도</span> 마곡나루역<br>1번 출구와 2번 출구 사이 내부 연결통로로 바로 이어져 있어 대중교통으로 편하게 오실 수 있습니다.</p>
+      </div>
+      <div>
+        <h3>주차</h3>
+        <p>보타닉푸르지오시티 건물에 주차하실 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="sign">Jisung &amp; Hwajung</p>
+    <p style="margin:0">함께해 주셔서 감사합니다</p>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function () {
+  // 2027년 1월: 1일이 금요일
+  var cal = document.getElementById('cal');
+  var heads = ['일', '월', '화', '수', '목', '금', '토'];
+  var html = heads.map(function (h, i) {
+    return '<span class="hd' + (i === 0 ? ' sun' : '') + '">' + h + '</span>';
+  }).join('');
+  var first = new Date(2027, 0, 1).getDay();
+  for (var b = 0; b < first; b++) html += '<span></span>';
+  for (var d = 1; d <= 31; d++) {
+    var dow = (first + d - 1) % 7;
+    var cls = d === 31 ? 'day-of' : (dow === 0 ? 'sun' : '');
+    html += '<span' + (cls ? ' class="' + cls + '"' : '') + '>' + d + '</span>';
+  }
+  cal.innerHTML = html;
+
+  // 예식 시각: 2027-01-31 15:10 KST
+  var target = Date.UTC(2027, 0, 31, 6, 10);
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  function tick() {
+    var diff = target - Date.now();
+    var line = document.getElementById('dday-line');
+    if (diff <= 0) {
+      line.innerHTML = '지성 <span aria-hidden="true">♥</span> 화정이 부부가 되었습니다';
+      document.querySelector('.dday-units').hidden = true;
+      return;
+    }
+    var s = Math.floor(diff / 1000);
+    var days = Math.floor(s / 86400);
+    document.getElementById('dday-num').textContent = days === 0 ? 'D-DAY' : 'D-' + (days + 1);
+    document.getElementById('u-d').textContent = days;
+    document.getElementById('u-h').textContent = pad(Math.floor(s % 86400 / 3600));
+    document.getElementById('u-m').textContent = pad(Math.floor(s % 3600 / 60));
+    document.getElementById('u-s').textContent = pad(s % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  var toast = document.getElementById('toast');
+  var timer;
+  function show(msg) {
+    toast.textContent = msg;
+    toast.hidden = false;
+    clearTimeout(timer);
+    timer = setTimeout(function () { toast.hidden = true; }, 1800);
+  }
+  document.getElementById('copy-addr').addEventListener('click', function () {
+    var text = document.getElementById('addr').textContent;
+    var fallback = function () {
+      var r = document.createRange();
+      r.selectNodeContents(document.getElementById('addr'));
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(r);
+      show('주소를 선택했어요. 길게 눌러 복사하세요');
+    };
+    try {
+      navigator.clipboard.writeText(text).then(function () { show('주소를 복사했어요'); }, fallback);
+    } catch (e) { fallback(); }
+  });
+})();
+</script>
+
+</body>
+</html>
